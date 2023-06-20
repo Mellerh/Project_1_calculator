@@ -1,0 +1,113 @@
+/* задаём дефолтные  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'DM Sans', sans-serif;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+
+.conteiner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3f9ff;
+}
+
+/* стилизуем главный див-калькулятор */
+.calculatar {
+    width: 100%;
+    max-width: 310px;
+    background-color: #3a4452;
+    border-radius: 15px;
+    /* расширяет границы калькулятора вверх/вниз */
+    padding: 1.5rem;
+}
+
+/* задаём направление всех элементов в форме */
+.calculatar form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* задаём рассятоние между div, содержащие инпут */
+.calculatar form div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* первый div с инпутом, в котором будет отображаться итоговый результат */
+.calculatar form .displaydiv { 
+    justify-content: flex-end; 
+}
+
+
+/* стилизуем все инпуты */
+.calculatar form div input {
+    /* задаём цвет инпутам */
+    background-color: #3a4452;  
+    /* задаём отступы инпутам(кнопкам) между собой */
+    margin: 0.5rem;
+    /* задаём размеры кнопкам */
+    width: 3rem;
+    height: 3rem;
+    
+    /* изменяет поведение курсора при наведении на кнопку */
+    cursor: pointer;
+    
+    /* цвет вводимых символов в инпут */
+    color: white;
+    border-radius: 10px;
+    box-shadow: -1px -1px 2px 1px rgba(174, 174, 174, 0.25);
+    
+    border: 1px double black;
+
+}
+
+/* создаём поведение кнопки при нажатие на неё */
+.calculatar form div input:active {
+    background-color: rgb(45, 45, 45);
+}
+
+
+/* первый инпут, поле ввода */
+.calculatar form div input[type="text"] {
+    
+    /* инпут не может быть меньшее 100% ширины своего контейнера */
+    min-width: 100%;
+    
+    /* отображение текста внутри инпут справа */
+    text-align: right;
+    font-size: 2.5rem;
+    padding: 0rem 0.5rem;
+    /* расстояние между вводимыми цифрами */
+    letter-spacing: 0.3rem;
+
+    border: none;
+    box-shadow: none;
+
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+
+}
+
+/* первый инпут, поле ввода. focus отработает при выборе этого инпут */
+.calculatar form div input[type="text"]:focus{
+    /* убираем дефолтное появление белой рамки */
+    outline: none;
+    border-color: #091629;
+}
+
+/* кнопка = */
+.calculatar form div input.inputbtnequil {
+    flex-grow: 1;
+}
+
+.calculatar form div .additionalcolor {
+    color:#287efe
+}
+
