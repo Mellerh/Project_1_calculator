@@ -1,4 +1,7 @@
 # Project_1_calculator
+
+https://mellerh.github.io/Project_1_calculator/
+
 Сalculator with simple input checks
 
 Проект - калькулятор.
