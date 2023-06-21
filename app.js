@@ -103,7 +103,6 @@ function equil(res) {
 
     // toFixed ограничвает остаток до 4 чисел после точки и возвращает строку
     // парсим строчное число в обычное, чтобы убрать ненужные нули
-    
     result = parseFloat(result.toFixed(3));
     console.log(result);
     resultInput.value = result;
