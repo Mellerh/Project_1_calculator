@@ -1,6 +1,6 @@
 
 
-// GLOBAL
+// GLOBAL notMain
 
 // получаем все инпуты со страницы
 const inputs = document.querySelectorAll('.inputbtn');
